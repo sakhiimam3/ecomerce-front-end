@@ -1,0 +1,119 @@
+@import "./mixin.scss";
+
+.banner {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: #08071b;
+    @include flexgroup2;
+ 
+
+    img {
+        width: 100%;
+        height: 500px;
+
+    }
+
+    &::after {
+        content: '';
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+
+    }
+
+    .banner_content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+  .banner_text{
+       h1{
+           color: white;
+           font-weight: bold;
+           text-transform: capitalize;
+           font-size: 60px;
+       }
+       p{
+        color: white;
+        font-weight: 300;
+        text-transform: capitalize;
+        margin: 10px 0;
+       }
+
+       button{
+           width: max-content;
+           color: white;
+           padding: 10px 10px;
+           background-color:  #08071b;
+           text-transform: capitalize;
+           border: none;
+           border-radius: 10px;
+           font-weight: bold;
+           margin: 20px 0;
+           transition: all .5s linear;
+           &:hover{
+               background-color: pink;
+               color: black;
+           }
+       }
+  }
+    }
+
+    .banner_img_right_div{
+           height: 400px;
+           width: 400px;
+           border-radius: 50%;
+         
+
+           img{
+              height: 100%;
+              width: 100%;
+              border-radius: 50%;
+           }
+    }
+    
+}
+
+
+@media (max-width:776px) {
+    .banner_img_right_div{
+        display: none;
+     
+}
+.banner_content { 
+    
+        .banner_text{
+            h1{
+               
+                font-size: 30px !important ;
+            }
+            p{
+                font-size: 16px;
+            }
+        
+        
+        }
+    }
+
+}
+
+
+@media (min-width:320px) and (max-width:576px){
+    .banner_text{
+        h1{
+           
+            font-size: 18px !important ;
+        }
+        p{
+            font-size: 12px !important;
+        }
+    
+    
+    }
+}

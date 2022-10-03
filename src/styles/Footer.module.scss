@@ -1,0 +1,90 @@
+/* footer css start  */
+.footer{
+      background-color: rgb(0, 0, 0);
+      color:#fff;
+      .footer_text {
+        .footer_links{
+              text-decoration: none;
+              color: rgb(78, 60, 60);
+              font-size: 18px;
+      }
+  }
+      .footer_orange_box{
+        height: 100px;
+        background-color: rgb(2, 26, 107);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_btn {
+        width: 200px;
+        height: 35px;
+        button {
+            background: none;
+            border-radius: 15px;
+            width: 100%;
+            height: 35px;
+            border: 0.5px solid white;
+            text-transform: capitalize;
+            color: white;
+            transition: transform all .5s linear;
+            &:hover{
+                  background-color: rgb(13, 68, 150);
+            }
+        }
+    }
+ 
+  .social_icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .facebook,
+    .twitter {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgb(14, 14, 14);
+        color: aliceblue;
+        &:hover {
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+    }
+    .instagram {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #020b41;
+        color: aliceblue;
+        &:hover {
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+    }
+    
+}
+
+
+}
+
+
+    
+ 
+
+    
+
+
+
+
+
+
+/* footer css end  */

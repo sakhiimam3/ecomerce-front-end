@@ -1,24 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import 'bootstrap/dist/css/bootstrap.min.css'
+import {BrowserRouter,Routes,Route}  from  "react-router-dom"
+import Home from './pages/Home';
+import Shop from './pages/Shop';
+import Account from './pages/Account';
+import Login from "../src/pages/Login"
+import SignUp from "../src/pages/SignUp"
+import WhiteList from './pages/whitelist'
+import Cart from "./pages/cart"
+import Blog from './pages/Blog';
+import BlogDeatail from './pages/BlogDeatail';
+import ProductDetail from './compoents/productDetail';
+const  App=()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>  
+        <BrowserRouter>
+        <Routes>
+          <Route  path='/'    element={<Home />} />
+          <Route  path='/shop'   element={<Shop />} />
+          <Route  path='/account'   element={<Account />} />
+          <Route  path='/blog'   element={<Blog />} />
+          <Route  path='/blog/:id'   element={<BlogDeatail />} />
+          <Route  path='/login'   element={<Login />} />
+          <Route  path='/signup'   element={<SignUp />} />
+          <Route  path='/whitelist'   element={<WhiteList />} />
+          <Route  path='/cart'   element={<Cart />} />
+          <Route  path='/account'   element={<Account />} />
+          <Route  path='/shop/:id'   element={<ProductDetail />} />
+
+
+        </Routes>
+        </BrowserRouter>
+       
+    </>
   );
 }
 
