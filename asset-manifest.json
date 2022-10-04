@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c8f9eb92.css",
+    "main.js": "/static/js/main.aac53010.js",
+    "static/media/t-shirt2.png": "/static/media/t-shirt2.154d3062189a8e06123f.png",
+    "static/media/t-shirt3.png": "/static/media/t-shirt3.281bc700272d05899c53.png",
+    "static/media/t-shirt1.jpg": "/static/media/t-shirt1.467c237ef2ffeeeeb1d9.jpg",
+    "static/media/banner-right.jpg": "/static/media/banner-right.6bd16bbc0092a138cc31.jpg",
+    "static/media/banner.jpg": "/static/media/banner.fb599cf46df169a690cf.jpg",
+    "static/media/logo.png": "/static/media/logo.38e2113487834e78d547.png",
+    "index.html": "/index.html",
+    "main.c8f9eb92.css.map": "/static/css/main.c8f9eb92.css.map",
+    "main.aac53010.js.map": "/static/js/main.aac53010.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8f9eb92.css",
+    "static/js/main.aac53010.js"
+  ]
+}
